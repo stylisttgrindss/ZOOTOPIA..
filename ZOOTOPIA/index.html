@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Weather Dashboard</h1>
+        <div class="theme-toggle">
+          <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+        </div>
+      </header>
+
+      <div class="search-section">
+        <form id="search-form">
+          <input type="text" id="city-input" placeholder="Enter city name..." />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+
+      <div class="unit-toggle">
+        <label class="switch">
+          <input type="checkbox" id="unit-toggle" />
+          <span class="slider">
+            <span class="c">°C</span>
+            <span class="f">°F</span>
+          </span>
+        </label>
+      </div>
+
+      <div class="weather-container">
+        <div id="current-weather" class="current-weather">
+          <!-- Current weather will be displayed here -->
+        </div>
+
+        <div id="forecast" class="forecast">
+          <!-- Forecast will be displayed here -->
+        </div>
+      </div>
+
+      <div class="favorites-section">
+        <h2>Favorite Cities</h2>
+        <div id="favorites-list">
+          <!-- Favorites will be displayed here -->
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
