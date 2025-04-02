@@ -1,0 +1,19 @@
+{
+  "name": "zootopia-weather-dashboard",
+  "version": "1.0.0",
+  "description": "A weather dashboard application",
+  "main": "app.js",
+  "scripts": {
+    "start": "json-server --watch db.json"
+  },
+  "keywords": [
+    "weather",
+    "dashboard",
+    "javascript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.17.3"
+  }
+}
